@@ -1,0 +1,63 @@
+/* General style */
+
+body {
+    background-color: white;
+    font-family: "Raleway", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+/* score div */
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+}
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+#answer-box {
+    border: none;
+    color: #445361;
+    display: inline-block;
+    height: 40px;
+    width: 80px;
+    font-size: 1.2rem;
+    
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+
+/* Buttons */
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.btn--gray {
+    margin-top: 20px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 15px;
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #0d1013;
+}
