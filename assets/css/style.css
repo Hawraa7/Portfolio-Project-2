@@ -13,7 +13,7 @@ body {
     width: 60%;
     font-size: 1.2rem;
 }
-#score {
+#correct {
     color: green;
     font-weight: bold;
 }
@@ -21,6 +21,11 @@ body {
 #incorrect {
     color: red;
     font-weight: bold;
+}
+
+.scores {
+    display: inline-block;
+    padding: 25px;
 }
 
 #answer-box {
@@ -33,12 +38,6 @@ body {
     
 }
 
-.scores {
-    display: inline-block;
-    padding: 25px;
-}
-
-
 /* Buttons */
 
 .btn {
@@ -50,15 +49,15 @@ body {
     color: white;
 }
 
-.btn--gray {
+.black {
     margin-top: 20px;
     background-color: #445361;
     border: 1px transparent;
     border-radius: 15px;
 }
 
-.btn--gray:active,
-.btn--gray:hover {
+.black:active,
+.black:hover {
     background-color: #0d1013;
 }
 /* media queries */
@@ -69,7 +68,7 @@ body {
         display: block;
         margin: 0 auto;
     }
-    .btn--gray {
+    .black {
         margin-top: 0;
     }
 
