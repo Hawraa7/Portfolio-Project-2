@@ -61,3 +61,30 @@ body {
 .btn--gray:hover {
     background-color: #0d1013;
 }
+/* media queries */
+
+
+@media (max-width: 414px) {
+    #answer-box {
+        display: block;
+        margin: 0 auto;
+    }
+    .btn--gray {
+        margin-top: 0;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+}
+@media (max-width: 734px) {
+    .scores {
+        padding: 5px;
+    }
+}
