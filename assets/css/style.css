@@ -28,16 +28,6 @@ body {
     padding: 25px;
 }
 
-#answer-box {
-    border: none;
-    color: #445361;
-    display: inline-block;
-    height: 40px;
-    width: 80px;
-    font-size: 1.2rem;
-    
-}
-
 /* Buttons */
 
 .btn {
@@ -62,12 +52,7 @@ body {
 }
 /* media queries */
 
-
 @media (max-width: 414px) {
-    #answer-box {
-        display: block;
-        margin: 0 auto;
-    }
     .black {
         margin-top: 0;
     }
