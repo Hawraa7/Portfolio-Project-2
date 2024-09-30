@@ -3,7 +3,7 @@
  
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
-    buttons.addEventListener("click", function() {
+    button.addEventListener("click", function() {
 })
 
 })
