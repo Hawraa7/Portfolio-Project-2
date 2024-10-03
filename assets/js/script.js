@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function(){
         })
     }
 })
-
+/**
+ * control to check the capital of multiples countries
+ */
 function checkAnswer (button) {
     let countryName = button.id;
     let selectedbutton = document.querySelector(`input[name="${countryName}"]:checked`);
@@ -19,8 +21,11 @@ function checkAnswer (button) {
         let evaluation = userAnswer === correctAnswer;
         if (evaluation) {
             alert("Hey! Your answer was correct");
+            incrementScore();
         } else {
             alert(`Ohhhhh.... you answered ${userAnswer} . The correct answer was ${correctAnswer} .`);
+            incrementWrongAnswer();
+            
         }
         
     } else {
@@ -35,7 +40,7 @@ function clickSubmit () {
  * Gets the current score from the DOM and increments it by 1
  */
 function incrementScore () {
-    let oldScore = parseInt(document.getElementbyId("correct").innerText);
+    let oldScore = parseInt(document.getElementById("correct").innerText);
     document.getElementById("correct").innerText = ++oldScore;
 }
 
@@ -43,7 +48,7 @@ function incrementScore () {
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  */
 function incrementWrongAnswer () {
-    let oldScore = parseInt(document.getElementbyId("incorrect").innerText);
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 
 }
