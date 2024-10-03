@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 
 function checkAnswer () {
-
+    let countryName= 
  
 }
 
