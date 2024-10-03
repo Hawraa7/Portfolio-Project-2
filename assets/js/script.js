@@ -2,18 +2,30 @@
 // Get the button elements and add event listeners to them
  
 document.addEventListener("DOMContentLoaded", function(){
-        let buttons = document.getElementsByTagName("button"); 
-        for (let button of buttons) {
-            button.addEventListener("click", function() {
-               checkAnswer();
-            })
-        }
-    
-    })
+    let buttons = document.getElementsByTagName("button"); 
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            checkAnswer(button);
+        })
+    }
+})
 
-function checkAnswer () {
-    let countryName= 
- 
+function checkAnswer (button) {
+    let countryName = button.id;
+    let selectedbutton = document.querySelector(`input[name="${countryName}"]:checked`);
+    if (selectedbutton) {
+        let userAnswer = selectedbutton.value;
+        let correctAnswer = button.value;
+        let evaluation = userAnswer === correctAnswer;
+        if (evaluation) {
+            alert("Hey! Your answer was correct");
+        } else {
+            alert(`Ohhhhh.... you answered ${userAnswer} . The correct answer was ${correctAnswer} .`);
+        }
+        
+    } else {
+        alert('Select an option!');
+    }
 }
 
 function clickSubmit () {
