@@ -50,6 +50,12 @@ body {
 .black:hover {
     background-color: #0d1013;
 }
+
+#imgParis {
+    display: none;
+    width: 180px;
+    height: 200px;
+}
 /* media queries */
 
 @media (max-width: 414px) {

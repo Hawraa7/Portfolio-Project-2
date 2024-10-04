@@ -22,9 +22,11 @@ function checkAnswer (button) {
         if (evaluation) {
             alert("Hey! Your answer was correct");
             incrementScore();
+            showImage();
         } else {
             alert(`Ohhhhh.... you answered ${userAnswer} . The correct answer was ${correctAnswer} .`);
             incrementWrongAnswer();
+            
             
         }
         
@@ -33,9 +35,18 @@ function checkAnswer (button) {
     }
 }
 
-function clickSubmit () {
+function showImage () {
+     let countryImage = img.id;
+     let userAnswer = selectedbutton.value;
+     if (countryImage === userAnswer) {
+        document.getElementById('imgParis').style.display= 'block';
+     } else {
+        document.getElementById('imgParis').style.display= 'none';
+     }
+
 
 }
+
 /** 
  * Gets the current score from the DOM and increments it by 1
  */
