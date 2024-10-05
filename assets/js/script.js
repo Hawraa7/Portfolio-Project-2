@@ -22,7 +22,8 @@ function checkAnswer (button) {
         if (evaluation) {
             alert("Hey! Your answer was correct");
             incrementScore();
-            showImage();
+            let image = img.id;
+            showImage(selectedbutton,button,image);
         } else {
             alert(`Ohhhhh.... you answered ${userAnswer} . The correct answer was ${correctAnswer} .`);
             incrementWrongAnswer();
@@ -35,14 +36,14 @@ function checkAnswer (button) {
     }
 }
 
-function showImage () {
-     let countryImage = img.id;
+function showImage (selectedbutton,submitbutton,image) {
+     let correctAnswer = submitbutton.value;
      let userAnswer = selectedbutton.value;
-     let correctAnswer = countryImage === userAnswer
-     if (correctAnswer) {
-        document.getElementById('imgParis').style.display= 'inline-block';
+     let evaluation = correctAnswer === userAnswer;
+     if (evaluation) {
+        image.id.style.display= 'inline-block';
      } else {
-        document.getElementById('imgParis').style.display= 'none';
+        image.id.style.display= 'none';
      }
 
 
