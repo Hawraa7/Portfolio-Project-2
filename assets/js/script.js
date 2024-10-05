@@ -38,8 +38,9 @@ function checkAnswer (button) {
 function showImage () {
      let countryImage = img.id;
      let userAnswer = selectedbutton.value;
-     if (countryImage === userAnswer) {
-        document.getElementById('imgParis').style.display= 'block';
+     let correctAnswer = countryImage === userAnswer
+     if (correctAnswer) {
+        document.getElementById('imgParis').style.display= 'inline-block';
      } else {
         document.getElementById('imgParis').style.display= 'none';
      }
