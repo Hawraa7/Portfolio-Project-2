@@ -70,7 +70,6 @@ function incrementScore () {
 function incrementWrongAnswer () {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-
 }
 document.getElementById("resetbutton").addEventListener("click", function() {
     /** 
@@ -82,7 +81,7 @@ document.getElementById("resetbutton").addEventListener("click", function() {
       form.reset();
       let division = document.getElementsByClassName('answergroup');
       division.style.color = "white";
-    }
+    };
     /** 
      * Reset all buttons
      */
