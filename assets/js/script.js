@@ -44,6 +44,7 @@ function checkAnswer (button) {
 /**
  * Show image when the user answered correctly
  */
+/** 
 function showImage (selectedbutton,submitbutton,image) {
      let correctAnswer = submitbutton.value;
      let userAnswer = selectedbutton.value;
@@ -54,7 +55,7 @@ function showImage (selectedbutton,submitbutton,image) {
         image.id.style.display= 'none';
      }
 }
-
+*/
 /** 
  * Gets the current score from the DOM and increments it by 1
  */
@@ -71,7 +72,7 @@ function incrementWrongAnswer () {
     document.getElementById("incorrect").innerText = ++oldScore;
 
 }
-document.getElementById("reset button").addEventListener("click", function() {
+document.getElementById("resetbutton").addEventListener("click", function() {
     /** 
      * Clear all selected radio buttons by resetting the forms
      */
@@ -79,7 +80,7 @@ document.getElementById("reset button").addEventListener("click", function() {
     let forms = document.getElementsByTagName("form");
     for (let form of forms){
       form.reset();
-      let division = document.getElementById('answergroup');
+      let division = document.getElementsByClassName('answergroup');
       division.style.color = "white";
     }
     /** 
