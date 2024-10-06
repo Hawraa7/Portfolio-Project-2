@@ -44,8 +44,6 @@ function checkAnswer (button) {
 /**
  * Show image when the user answered correctly
  */
-
-
 function showImage (selectedbutton,submitbutton,image) {
      let correctAnswer = submitbutton.value;
      let userAnswer = selectedbutton.value;
@@ -81,7 +79,8 @@ document.getElementById("reset button").addEventListener("click", function() {
     let forms = document.getElementsByTagName("form");
     for (let form of forms){
       form.reset();
-      form.style.color = "white"
+      let division = document.getElementById('answergroup');
+      division.style.color = "white";
     }
     /** 
      * Reset all buttons
