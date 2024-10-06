@@ -4,13 +4,16 @@
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button"); 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
-            checkAnswer(button);
-        })
+        if (button.innerText === "SUBMIT ANSWER"){
+            button.addEventListener("click", function() {
+                event.preventDefault();
+                checkAnswer(button);
+             })
+         }
     }
 })
 /**
- * control to check the capital of multiples countries
+ * Control to check the capital of multiples countries
  */
 function checkAnswer (button) {
     let countryName = button.id;
@@ -20,21 +23,28 @@ function checkAnswer (button) {
         let correctAnswer = button.value;
         let evaluation = userAnswer === correctAnswer;
         if (evaluation) {
+            selectedbutton.parentElement.style.color = "green";
             alert("Hey! Your answer was correct");
             incrementScore();
-            let image = img.id;
-            showImage(selectedbutton,button,image);
         } else {
+            selectedbutton.parentElement.style.color = "red";
             alert(`Ohhhhh.... you answered ${userAnswer} . The correct answer was ${correctAnswer} .`);
             incrementWrongAnswer();
-            
-            
         }
+      button.disabled = true;
+      button.innerText = "Submitted";
+      button.style.backgroundColor = "lightgrey";
+      button.style.color = "darkgrey"; 
+      button.style.cursor = "not-allowed"; 
         
     } else {
         alert('Select an option!');
-    }
+    } 
 }
+/**
+ * Show image when the user answered correctly
+ */
+
 
 function showImage (selectedbutton,submitbutton,image) {
      let correctAnswer = submitbutton.value;
@@ -45,8 +55,6 @@ function showImage (selectedbutton,submitbutton,image) {
      } else {
         image.id.style.display= 'none';
      }
-
-
 }
 
 /** 
@@ -65,4 +73,34 @@ function incrementWrongAnswer () {
     document.getElementById("incorrect").innerText = ++oldScore;
 
 }
+document.getElementById("reset button").addEventListener("click", function() {
+    /** 
+     * Clear all selected radio buttons by resetting the forms
+     */
+    event.preventDefault();
+    let forms = document.getElementsByTagName("form");
+    for (let form of forms){
+      form.reset();
+      form.style.color = "white"
+    }
+    /** 
+     * Reset all buttons
+     */
+    let buttons = document.getElementsByTagName("button"); 
+    for (let button of buttons) {
+      if (button.innerText != "RESET"){
+      button.disabled = false;
+      button.innerText = "SUBMIT ANSWER";
+      button.style.backgroundColor = "#445361";
+      button.style.color = "white"; 
+      button.style.cursor = "pointer"; 
+      }
+    }
+    /**
+     * Reset the scores
+     */
+    document.getElementById("incorrect").innerText = 0;
+    document.getElementById("correct").innerText = 0;
+ 
+});
 

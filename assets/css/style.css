@@ -1,10 +1,45 @@
-/* General style */
+/* General Style */
 
 body {
     background-color: white;
     font-family: "Raleway", sans-serif;
-    color: #445361;
+    color: white;
     text-align: center;
+}
+#game {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #132d5e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+#answergroup {
+  display: block;
+  grid-template-columns: 0.5fr 0.5fr;
+  margin: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: rgb(96,0,0);
+}
+h3 {
+  font-size: 1.5rem;
+  background-color: #1b3a7b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.questions {
+    box-shadow: 
+}
+/* Answer styling */
+.answer {
+
 }
 /* score div */
 
@@ -37,6 +72,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
+    cursor: pointer;
 }
 
 .black {
@@ -57,9 +93,6 @@ body {
     height: 200px;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-#imgBerlin {
-    
 }
 /* media queries */
 
@@ -83,3 +116,4 @@ body {
         padding: 5px;
     }
 }
+
