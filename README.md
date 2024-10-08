@@ -4,7 +4,7 @@ Capitals of European Countries is a cultural site that hopes to help friends, co
 
 Users of this game will learn the capitals of each countrie european. This site will be targeted towards adults and children alike as a simple application to learn, practice and have fun with.
 
-(screenshot)
+(screenshot la kaza screen)
 
 ## Features
 ### Existing Features
@@ -46,6 +46,77 @@ Users of this game will learn the capitals of each countrie european. This site 
 
   #### Features Left to implement 
   * When there is time, I would like to expand this cultural quiz game to include another type of culturals questions.(.......)
+
+## Testing 
+
+* I tested running the game in different browsers: Chrome, Firefox, Safari.
+
+* I confirmed that the game results are always run.
+
+* I confirmed that the header, options in radio button and results are all readable and easy to understand.
+
+* I confirmed that the colors and images chosen are easy to read and accessible by running it through lighthouse in devtools.
+
+(screenshot lal testing)
+
+* I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
+
+
+### Bugs
+
+#### Solved bugs 
+
+(bade ishra7 3n lperformance)
+
+### Validator Testing
+
+* HTML 
+
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+* CSS 
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+* JavaScript
+  - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+
+  (tafasil 3n ljavascript wl function)
+
+  ### Unfixed Bugs
+
+  No Unfixed bugs
+
+  ## Deployment
+
+* The site was deployed to GitHub pages. The steps to deploy are as follows: 
+
+  - In the GitHub repository, navigate to the Settings tab
+
+  - From the source section drop-down menu, select the Master Branch
+
+  - Once the master branch has been selected, the page provided the link to the completed website.
+
+  The live link can be found here- https://hawraa7.github.io/Portfolio-Project-2/
+
+
+  ## Credits
+
+  ### Media
+
+* The images was taken from [Pexels](https://www.pexels.com/)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 
