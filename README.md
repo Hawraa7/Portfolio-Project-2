@@ -1,8 +1,8 @@
 # Capitals of European Countries
 
-Capitals of European Countries is a cultural site that hopes to help friends, colleagues and family members to know the  different capitals of the european countries with a play style. It hopes to demonstrate how pure Javascript works in a real-world context.
+Capitals of European Countries is a cultural site that hopes to help friends, colleagues and family members to know the  different capitals of the european countries with a play style. It aimes to demonstrate how pure Javascript works in a real-world context.
 
-Users of this game will learn the capitals of each countrie european. This site will be targeted towards adults and children alike as a simple application to learn, practice and have fun with.
+Users of this game will learn the capitals of each european country. This site will be targeted towards adults and children alike as a simple application to learn, practice and have fun with.
 
 ![Screenshot of the Responsive Page](assets/images/screenshot1.png)
 
@@ -12,7 +12,7 @@ Users of this game will learn the capitals of each countrie european. This site 
 * Header
 
   
-  - Featured at the top of the page, the Capitals of European Countries heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game and know what the game they are playing.
+  - Featured at the top of the page, the Capitals of European Countries heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game and know what game they are playing.
 
   ![Screenshot of the Header](assets/images/header.png)
 
@@ -39,13 +39,13 @@ Users of this game will learn the capitals of each countrie european. This site 
 
 * The Reset button 
 
-  - The user can refresh the page and return to the initiation with the (..................)
+  - The reset button in this game allows players to start over, clearing their previous answers and scores. This feature lets users replay the game fresh, providing a new opportunity to test their knowledge without any leftover data from earlier attempts.
 
-  ![Screenshot of the Reset button](assets/images/resetbutton.png)
+![Screenshot of the Reset button](assets/images/resetbutton.png)
 
 
   #### Features Left to implement 
-  * When there is time, I would like to expand this cultural quiz game to include another type of culturals questions.(.......)
+  * When there is time, I would like to expand this cultural quiz game to include another type of culturals questions with different styles of answering like listing the most relevant keywords or providing some hints and helping routines for end users.
 
 ## Testing 
 
@@ -57,7 +57,7 @@ Users of this game will learn the capitals of each countrie european. This site 
 
 * I confirmed that the colors and images chosen are easy to read and accessible by running it through lighthouse in devtools.
 
-(screenshot lal testing)
+![Screenshot of testing](assets/images/Screenshottesting.png)
 
 * I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar.
 
@@ -66,7 +66,9 @@ Users of this game will learn the capitals of each countrie european. This site 
 
 #### Solved bugs 
 
-(bade ishra7 3n lperformance)
+During the final stages of the project, I focused on enhancing performance by reducing image quality, which significantly improved the webpage's loading speed and responsiveness. To troubleshoot a bug in the JavaScript code where the reset button failed to reset the score, I utilized console printing to track the execution flow and identify that the default routine was interfering with the reset function. After pinpointing the issue, I adjusted the code to ensure that the reset button would properly clear the score and restore the game to its initial state.
+
+
 
 ### Validator Testing
 
@@ -79,8 +81,17 @@ Users of this game will learn the capitals of each countrie european. This site 
 
 * JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+     - The following metrics were returned:
 
-  (tafasil 3n ljavascript wl function)
+     - There are 6 functions in this file.
+
+     - Function with the largest signature take 1 argument, while the median is 0.5.
+
+     - Largest function has 19 statements in it, while the median is 3.
+
+     - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+
 
   ### Unfixed Bugs
 
